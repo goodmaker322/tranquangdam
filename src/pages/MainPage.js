@@ -36,30 +36,30 @@ const MainPage = () => {
   }, [location]);
 
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-gray-900 text-white w-full">
       {/* Section Home */}
-      <section ref={homeRef} className="h-screen flex items-center justify-center">
+      <section ref={homeRef} className="min-h-screen flex items-center justify-center px-4 sm:px-8">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <Home />
         </motion.div>
       </section>
 
       {/* Section About */}
-      <section ref={aboutRef} className="h-screen flex items-center justify-center">
+      <section ref={aboutRef} className="min-h-screen flex items-center justify-center px-4 sm:px-8">
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <About />
         </motion.div>
       </section>
 
       {/* Section Skills */}
-      <section ref={skillsRef} className="h-screen flex items-center justify-center">
+      <section ref={skillsRef} className="min-h-screen flex items-center justify-center px-4 sm:px-8">
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <Skills />
         </motion.div>
       </section>
 
       {/* Section Contact */}
-      <section ref={contactRef} className="h-screen flex items-center justify-center">
+      <section ref={contactRef} className="min-h-screen flex items-center justify-center px-4 sm:px-8">
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <Contact />
         </motion.div>
