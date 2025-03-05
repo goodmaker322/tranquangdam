@@ -8,6 +8,7 @@ const Home = () => {
 
   // Hàm mở file CV
   const handleViewCV = () => {
+    window.open("/CV.pdf", "_blank");
     const pdfUrl = process.env.PUBLIC_URL + "/CV.pdf";
     window.open(pdfUrl, "_blank");
   };
