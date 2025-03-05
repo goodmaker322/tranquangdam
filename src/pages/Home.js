@@ -6,9 +6,13 @@ import avatar from "../images/avatar.png";
 const Home = () => {
   const [isEnglish, setIsEnglish] = useState(true);
 
+  // Hàm mở file CV
   const handleViewCV = () => {
-    window.open("/CV.pdf", "_blank");
+    const pdfUrl = process.env.PUBLIC_URL + "/CV.pdf";
+    window.open(pdfUrl, "_blank");
   };
+  
+
 
   const toggleLanguage = () => {
     setIsEnglish(!isEnglish);
